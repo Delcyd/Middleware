@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Shopping List</h1>
+        <a href="/add" class="add-button">Add New Item</a>
+        <ul class="shopping-list">
+            {% for item in items %}
+                <li class="shopping-item">
+                    <span class="item-name">{{ item.name }}</span> 
+                    <span class="item-amount">{{ item.amount }}</span>
+                    <div class="actions">
+                        <a href="/update/{{ item.name }}" class="edit-link">Edit</a>
+                        <a href="/delete/{{ item.name }}" class="delete-link">Delete</a>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+/* General Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f4ed;
+    background-image: url("https://wallpaperboat.com/wp-content/uploads/2020/11/10/60057/shopping-07-920x518.jpg");
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    padding: 25px;
+    text-align: center;
+}
+
+/* Title */
+.title {
+    font-size: 2.5rem;
+    color: #4a4e69;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+/* Add Button */
+.add-button {
+    display: inline-block;
+    background: #9a8c98;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.add-button:hover {
+    background: #c9ada7;
+}
+
+/* Shopping List */
+.shopping-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.shopping-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background: #edf2f4;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shopping-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+    font-weight: bold;
+    color: #2b2d42;
+}
+
+.item-amount {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+/* Action Links */
+.actions a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-left: 10px;
+    padding: 6px 15px;
+    border-radius: 30px;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.edit-link {
+    background: #4a90e2;
+    color: white;
+}
+
+.edit-link:hover {
+    background: #5ba0ef;
+}
+
+.delete-link {
+    background: #d62828;
+    color: white;
+}
+
+.delete-link:hover {
+    background: #e63946;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .shopping-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .actions {
+        margin-top: 10px;
+    }
+}
