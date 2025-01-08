@@ -1,10 +1,10 @@
 services:
   frontendflask:
-    image: maeddes/frontendflask:hft24
+    image: delcyd/frontend-fastapi:latest
     networks:
       - shopnet
     ports:
-      - "5000:5000"  # Exposes Flask app on port 5000
+      - "7000:7000"  # Exposes Flask app on port 7000
     environment:
       SPRING_BOOT_API_URL: http://backendspringboot:8080/api/shoppingItems
     depends_on:
