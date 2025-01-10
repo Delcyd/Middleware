@@ -10,6 +10,7 @@ Command to run
 Approach:
 A single codebase is maintained in version control (e.g., Git).
 Your project structure is divided into distinct services: fast_api_frontend, springboot_backend, and database, adhering to modular architecture.
+
 **2. Dependencies**
 Approach:
 Frontend: Dependencies are specified in requirements.txt (e.g., fastapi, uvicorn, etc.).
